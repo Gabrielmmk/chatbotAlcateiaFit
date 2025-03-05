@@ -1,0 +1,634 @@
+/* Global Styles */
+body h1,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #13161B;
+    padding: 0 60px;
+}
+
+#logo {
+    width: 155px;
+}
+
+.navbar {
+    padding: 0 60px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    position: relative;
+    padding: 0 .8rem;
+    font-weight: 600;
+    cursor: pointer;
+    height: 30px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #ffc107;
+    transition: width 0.4s ease, left 0.4s ease;
+    margin-bottom: 4px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+#capa {
+    width: 100%;
+    background-image: url(../imgs/img_capa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+#textoCapa {
+    padding: 10px;
+    backdrop-filter: blur(1.2px);
+}
+
+#whatsapp {
+    margin-right: 80px;
+    margin-bottom: 80px;
+    text-align: end;
+
+}
+
+#whatsapp a {
+    color: #25D366;
+
+}
+
+#whatsapp a:hover {
+    color: #1EB954;
+}
+
+/*Section Planos*/
+
+#planos-menu h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+#planos-menu p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+/*Planos*/
+#sectionPlanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#sectionPlanos h1 {
+    font-weight: 700;
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#sectionPlanos .title-plan p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.card-plan {
+    border: 3px solid #ffc107;
+    border-radius: 7px;
+    width: 290px;
+    height: 330px;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.col-12 {
+    display: flex;
+    justify-content: center;
+}
+
+.card-plan #recomendado {
+    width: 120px;
+    border-radius: 5px;
+    position: relative;
+    top: -23px;
+    left: -18px;
+    background-color: #ffc107;
+    color: #fff;
+    font-weight: 600;
+    margin: 0px;
+
+}
+
+.card-plan .beneficios {
+    height: 190px;
+}
+
+.card-plan .valorTotal-plan {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.valorTotal-plan p {
+    border-top: 1px solid #13161B;
+    font-size: 50px;
+}
+
+.card-plan ol {
+    padding: 0;
+}
+
+.card-plan li {
+    list-style: none;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.card-plan:hover {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 250ms ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*Modalidades*/
+
+
+#modalidades {
+    padding: 15px;
+}
+
+#modalidades-title h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.7em;
+
+}
+
+#modalidades-title p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+#modalidades .card {
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+    width: 100%;
+    height: 190px;
+}
+
+/*Aulas*/
+
+#aulas-title h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+#aulas-title p {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+#imgAulas {
+    margin: 30px 30px 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#imgAulas img {
+    border: 3px solid #13161B;
+    border-radius: 3px;
+
+}
+
+#aulas-title a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.modal {
+    position: fixed;
+    /* Para que fique fixo na tela */
+    width: 100%;
+    /* Ocupa toda a largura da tela */
+    height: 100%;
+    /* Ocupa toda a altura da tela */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo semi-transparente */
+    z-index: 9999;
+    /* Garante que fique acima de outros elementos */
+}
+
+
+#modalAulas h5 {
+    font-family: "Montserrat", sans-serif;
+}
+
+#modalAulas button {
+    background-color: #13161B;
+    font-family: "Montserrat", sans-serif;
+}
+
+#modalAulas button:hover {
+    color: #ffc107;
+    font-family: "Montserrat", sans-serif;
+}
+
+#modalAulas a {
+    background-color: #13161B;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+#modalAulas a:hover {
+    color: #ffc107;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Footer*/
+#contatos {
+    margin-top: 50px;
+    background-color: #13161B;
+    padding: 10px;
+}
+
+#contatos ul,
+li {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+#contatos span {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #ffc107;
+}
+
+#infoAcademia {
+    color: #fff;
+    margin-top: 40px;
+}
+
+#contatos a {
+    margin-right: 10px;
+}
+
+#contatos li a:hover {
+    color: #ffc107;
+}
+
+#mapsAcademia {
+    margin: 40px;
+}
+
+#contatos p {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+#icons a {
+    color: #fff;
+}
+
+#icons a:hover {
+    color: red;
+}
+
+/* Breakpoints */
+@media (min-width: 281px) and (max-width: 369px) {
+    #logo {
+        width: 50px;
+    }
+
+    header,
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 5px;
+    }
+
+    #capa {
+        height: 30vh;
+        padding: 80px 0;
+    }
+
+    #capa h1 {
+        color: #ffc107;
+        font-size: 1.1em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #capa h3 {
+        color: white;
+        font-size: 0.6em;
+        text-align: center;
+        font-weight: 700;
+    }
+
+
+    /*Section Planos*/
+
+    #planos-menu h1 {
+        font-size: 0.5em;
+    }
+
+
+    /*Aulas*/
+    #imgAulas img {
+        width: 100%;
+    }
+
+
+}
+
+/*Extra small devices (portrait phones, less than 401px)*/
+@media (min-width: 370px) and (max-width: 575.98px) {
+    #logo {
+        width: 50px;
+    }
+
+    header,
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 5px;
+    }
+
+    #capa {
+        height: 30vh;
+        padding: 80px 0;
+    }
+
+    #capa h1 {
+        color: #ffc107;
+        font-size: 1.7em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #capa h3 {
+        color: white;
+        font-size: 1.1em;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    #whatsapp {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-align: end;
+    }
+
+    /*Modalidades*/
+    #modalidades {
+        padding: 15px;
+        margin: 50px 0px;
+    }
+
+    /*Aulas*/
+    #imgAulas img {
+        width: 100%;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin-top: 50%;
+    }
+
+
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #logo {
+        width: 60px;
+    }
+
+    header,
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 5px;
+    }
+
+    #capa {
+        height: 30vh;
+        padding: 80px 0;
+    }
+
+    #capa h1 {
+        color: #ffc107;
+        font-size: 2em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #capa h3 {
+        color: white;
+        font-size: 1.4em;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    /*Aulas*/
+    #imgAulas img {
+        width: 100%;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin-top: 50%;
+    }
+
+
+
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #logo {
+        width: 60px;
+    }
+
+    header,
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 5px;
+    }
+
+    #capa {
+        height: 40vh;
+        padding: 90px 0;
+    }
+
+    #capa h1 {
+        color: #ffc107;
+        font-size: 2.2em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #capa h3 {
+        color: white;
+        font-size: 1.6em;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    #whatsapp {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #modalidades .card {
+        border-radius: 7px;
+        margin-bottom: 35px;
+    }
+
+    /*Aulas*/
+
+    #aulas-title h1 {
+        font-weight: 700;
+        font-size: 1.7em;
+    }
+
+    #aulas-title p {
+        font-size: 15px;
+    }
+
+    #imgAulas img {
+        width: 100%;
+        border: 3px solid #13161B;
+        border-radius: 7px;
+    }
+
+    /*Modal*/
+    .modal-content {
+        margin-top: 50%;
+    }
+
+
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    #logo {
+        width: 75px;
+    }
+
+    header,
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 5px;
+    }
+
+    #capa {
+        height: 50vh;
+        padding: 130px 0;
+    }
+
+    #capa h1 {
+        color: #ffc107;
+        font-size: 2.6em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #capa h3 {
+        color: white;
+        font-size: 1.9em;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    #modalidades .card {
+        border-radius: 7px;
+        margin-bottom: 55px;
+    }
+
+    /*Aulas*/
+    #imgAulas img {
+        width: 70%;
+    }
+
+
+}
